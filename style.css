@@ -15,9 +15,9 @@ body {
   font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
 }
 main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
-header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-bottom: 28px; }
 header img { width: 56px; height: 56px; border-radius: 13px; }
-header a { color: var(--text); text-decoration: none; font: 700 26px/1 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif; }
+header > a { color: var(--text); text-decoration: none; font: 700 26px/1 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif; }
 nav { margin-left: auto; display: flex; gap: 18px; font-size: 15px; }
 nav a { color: var(--muted); text-decoration: none; }
 nav a:hover, nav a[aria-current] { color: var(--lime); }
@@ -30,6 +30,7 @@ p, li { color: var(--text); }
 a { color: var(--teal); }
 ul, ol { padding-left: 22px; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin: 18px 0; }
+.card > :first-child { margin-top: 0; }
 .hero { width: 100%; border-radius: 18px; margin: 18px 0 8px; display: block; }
 footer { margin-top: 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
 @media (max-width: 520px) {
