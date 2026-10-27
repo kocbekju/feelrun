@@ -28,7 +28,7 @@ p, li { color: var(--text); }
 .lead { color: var(--muted); font-size: 19px; }
 .tag { color: var(--lime); font-weight: 600; }
 a { color: var(--teal); }
-ul { padding-left: 22px; }
+ul, ol { padding-left: 22px; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin: 18px 0; }
 .hero { width: 100%; border-radius: 18px; margin: 18px 0 8px; display: block; }
 footer { margin-top: 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
