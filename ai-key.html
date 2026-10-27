@@ -2,94 +2,142 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Your Own AI Key · Feelrun</title>
 <meta name="description" content="How to get your own OpenAI or Anthropic API key and turn on Feelrun's AI coach, step by step with pictures.">
+<meta name="theme-color" content="#061316">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 </head>
 <body>
-<main>
-  <header>
-    <img src="icon.png" alt="">
-    <a href="./">Feelrun</a>
-    <nav><a href="./">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
-  </header>
+<header class="site-header wrap">
+  <a class="brand" href="./"><img src="icon.png" alt="" width="44" height="44">Feelrun</a>
+  <nav aria-label="Site"><a href="./">Home</a><a href="ai-key.html" aria-current="page">AI key</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+</header>
 
-  <h1>Your own AI key</h1>
-  <p class="lead">Feelrun's AI coach writes your cues during a run, analyses your runs, answers in the chat and plans your weeks, with OpenAI or Anthropic and under your own account. This is how to set it up; it takes about five minutes.</p>
-
-  <div class="card">
-    <h3>What it is, and what it costs</h3>
-    <ul>
-      <li>Feelrun has no server and sells no AI. Your iPhone sends each request straight to the provider with your key, which stays in your iPhone's Keychain.</li>
-      <li>A ChatGPT or Claude subscription does not include a key. The key comes from the provider's developer site, which is a separate account.</li>
-      <li>The provider bills that account for what Feelrun asks. You add credit first; a small amount such as 5 USD is enough to start, and you can set a spending limit there.</li>
-      <li>The AI coach is open in the free 30 days and with Feelrun Pro. Without a key, Feelrun still speaks its built-in cues during your runs.</li>
-    </ul>
+<main class="wrap">
+  <div class="doc-head read">
+    <p class="eyebrow">Settings › AI</p>
+    <h1>Your own AI key</h1>
+    <p class="lead">Feelrun's AI coach writes your cues during a run, analyses your runs, answers in the chat and plans your weeks, with OpenAI or Anthropic and under your own account. Setting it up takes about five minutes.</p>
   </div>
 
-  <h2><span class="step">1</span>Choose your provider in Feelrun</h2>
-  <p>Open <strong>Settings › AI</strong> and under <strong>Coach Engine</strong> choose <strong>OpenAI</strong> or <strong>Anthropic</strong>. Feelrun shows these same steps there, with links to the provider's pages.</p>
-  <img class="shot" src="img/ai-key-steps.jpg" alt="Settings, AI: Anthropic chosen as the coach engine, with six numbered steps on how to get a key">
-
-  <h2><span class="step">2</span>Make an account and add credit</h2>
-  <div class="cols">
+  <section class="section read" aria-labelledby="costs">
     <div class="card">
-      <h3>OpenAI</h3>
-      <p>Open the <a href="https://platform.openai.com/api-keys">OpenAI Platform</a> and sign in, or make an account. In <a href="https://platform.openai.com/settings/organization/billing/overview">Billing</a>, add a card and some credit. With auto recharge off, no more is ever taken.</p>
+      <h2 id="costs" class="card-title">What it is, and what it costs</h2>
+      <ul>
+        <li>Feelrun has no server and sells no AI. Your iPhone sends each request straight to the provider with your key, which stays in your iPhone's Keychain.</li>
+        <li>A ChatGPT or Claude subscription does not include a key. The key comes from the provider's developer site, which is a separate account.</li>
+        <li>The provider bills that account for what Feelrun asks. You add credit first; a small amount such as 5 USD is enough to start, and you can set a spending limit there.</li>
+        <li>The AI coach is open in the free 30 days and with Feelrun Pro. Without a key, Feelrun still speaks its built-in cues during your runs.</li>
+      </ul>
     </div>
-    <div class="card">
-      <h3>Anthropic</h3>
-      <p>Open the <a href="https://platform.claude.com/settings/keys">Claude Console</a> and sign in, or make an account. In <a href="https://platform.claude.com/settings/billing">Billing</a>, buy some credit.</p>
+  </section>
+
+  <section class="step" aria-labelledby="s1">
+    <div class="step-text">
+      <h2 id="s1"><span class="step-num">1</span>Choose your provider in Feelrun</h2>
+      <p>Open <strong>Settings › AI</strong> and under <strong>Coach Engine</strong> choose <strong>OpenAI</strong> or <strong>Anthropic</strong>. Feelrun shows these same steps there, with links to the provider's pages.</p>
     </div>
-  </div>
+    <img class="shot" src="img/ai-key-steps.jpg" width="640" height="847" alt="Settings, AI: Anthropic chosen as the coach engine, with six numbered steps on how to get a key">
+  </section>
 
-  <h2><span class="step">3</span>Create the key and copy it</h2>
-  <div class="cols">
-    <div class="card">
-      <h3>OpenAI</h3>
-      <p>In <strong>API keys</strong>, tap <strong>Create new secret key</strong>, name it Feelrun and copy it. It starts with <code>sk-</code>.</p>
+  <section class="step only" aria-labelledby="s2">
+    <div class="step-text">
+      <h2 id="s2"><span class="step-num">2</span>Make an account and add credit</h2>
+      <div class="providers">
+        <div class="card">
+          <h3>OpenAI</h3>
+          <p>Open the <a href="https://platform.openai.com/api-keys">OpenAI Platform</a> and sign in, or make an account. In <a href="https://platform.openai.com/settings/organization/billing/overview">Billing</a>, add a card and some credit. With auto recharge off, no more is ever taken.</p>
+        </div>
+        <div class="card">
+          <h3>Anthropic</h3>
+          <p>Open the <a href="https://platform.claude.com/settings/keys">Claude Console</a> and sign in, or make an account. In <a href="https://platform.claude.com/settings/billing">Billing</a>, buy some credit.</p>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <h3>Anthropic</h3>
-      <p>In <strong>API keys</strong>, tap <strong>Create key</strong>, name it Feelrun and copy it. It starts with <code>sk-ant-</code>.</p>
+  </section>
+
+  <section class="step only" aria-labelledby="s3">
+    <div class="step-text">
+      <h2 id="s3"><span class="step-num">3</span>Create the key and copy it</h2>
+      <div class="providers">
+        <div class="card">
+          <h3>OpenAI</h3>
+          <p>In <strong>API keys</strong>, tap <strong>Create new secret key</strong>, name it Feelrun and copy it. It starts with <code>sk-</code>.</p>
+        </div>
+        <div class="card">
+          <h3>Anthropic</h3>
+          <p>In <strong>API keys</strong>, tap <strong>Create key</strong>, name it Feelrun and copy it. It starts with <code>sk-ant-</code>.</p>
+        </div>
+      </div>
+      <p>The key is shown only once. If it is lost, make a new one and delete the old one. Do not send it to anyone, Feelrun's support included.</p>
     </div>
-  </div>
-  <p>The key is shown only once. If it is lost, make a new one and delete the old one. Do not send it to anyone, Feelrun's support included.</p>
+  </section>
 
-  <h2><span class="step">4</span>Paste it into Feelrun</h2>
-  <p>Back in Settings › AI, tap <strong>Paste</strong> next to the key field. Feelrun checks the key and saves it in your iPhone's Keychain.</p>
-  <img class="shot wide" src="img/ai-key-paste.jpg" alt="The key field filled, with the Paste button beside it and the line: Key saved in this iPhone's Keychain">
+  <section class="step" aria-labelledby="s4">
+    <div class="step-text">
+      <h2 id="s4"><span class="step-num">4</span>Paste it into Feelrun</h2>
+      <p>Back in Settings › AI, tap <strong>Paste</strong> next to the key field. Feelrun checks the key and saves it in your iPhone's Keychain.</p>
+    </div>
+    <img class="shot" src="img/ai-key-paste.jpg" width="640" height="254" alt="The key field filled, with the Paste button beside it and the line: Key saved in this iPhone's Keychain">
+  </section>
 
-  <h2><span class="step">5</span>Choose a model</h2>
-  <p>The list comes from your provider. A smaller, newer model answers quickly and costs less; a larger one writes longer analyses. Feelrun never changes your choice on its own.</p>
-  <img class="shot wide" src="img/ai-key-model.jpg" alt="The model menu open, listing the provider's models">
+  <section class="step" aria-labelledby="s5">
+    <div class="step-text">
+      <h2 id="s5"><span class="step-num">5</span>Choose a model</h2>
+      <p>The list comes from your provider. A smaller, newer model answers quickly and costs less; a larger one writes longer analyses. Feelrun never changes your choice on its own.</p>
+    </div>
+    <img class="shot" src="img/ai-key-model.jpg" width="640" height="435" alt="The model menu open, listing the provider's models">
+  </section>
 
-  <h2><span class="step">6</span>Allow your training data to be shared</h2>
-  <p>Turn on <strong>Share My Training Data</strong>, or tap <strong>Allow</strong> when Feelrun asks the first time an AI feature needs it. It says what goes to the provider: workout summaries, heart rate, pace and climbs, your goal and plan, your chat. No GPS coordinates are sent, and nothing goes to Feelrun. You can turn it off at any time.</p>
-  <img class="shot" src="img/ai-key-consent.jpg" alt="Feelrun asking: Share workout data with Anthropic? with the list of what is sent, and Allow and Not now">
-  <p>Set up, Settings › AI looks like this:</p>
-  <img class="shot" src="img/ai-key-done.jpg" alt="Settings, AI with the key saved, a model chosen and Share My Training Data on">
+  <section class="step" aria-labelledby="s6">
+    <div class="step-text">
+      <h2 id="s6"><span class="step-num">6</span>Allow your training data to be shared</h2>
+      <p>Turn on <strong>Share My Training Data</strong>, or tap <strong>Allow</strong> when Feelrun asks the first time an AI feature needs it. It says what goes to the provider: workout summaries, heart rate, pace and climbs, your goal and plan, your chat. No GPS coordinates are sent, and nothing goes to Feelrun. You can turn it off at any time.</p>
+      <p>Set up, Settings › AI looks like the second picture.</p>
+    </div>
+    <div class="stack">
+      <img class="shot" src="img/ai-key-consent.jpg" width="640" height="1284" alt="Feelrun asking: Share workout data with Anthropic? with the list of what is sent, and Allow and Not now">
+      <img class="shot" src="img/ai-key-done.jpg" width="640" height="878" alt="Settings, AI with the key saved, a model chosen and Share My Training Data on">
+    </div>
+  </section>
 
-  <h2>Ready</h2>
-  <p>Ask the <strong>AI Coach</strong> tab about your training, or open a run and tap <strong>Analysis</strong>. During your next run the cues are written for you.</p>
-  <img class="shot" src="img/ai-key-coach.jpg" alt="The AI Coach chat answering a question about yesterday's trail run">
+  <section class="step" aria-labelledby="ready">
+    <div class="step-text">
+      <h2 id="ready">Ready</h2>
+      <p>Ask the <strong>AI Coach</strong> tab about your training, or open a run and tap <strong>Analysis</strong>. During your next run the cues are written for you.</p>
+    </div>
+    <img class="shot" src="img/phone-coach.jpg" width="540" height="1174" alt="The AI Coach chat answering a question about yesterday's trail run">
+  </section>
 
-  <h2>If something goes wrong</h2>
-  <ul>
-    <li><strong>Feelrun says the key looks wrong.</strong> Copy it again in full. An OpenAI key starts with <code>sk-</code>, an Anthropic key with <code>sk-ant-</code>; check that the right provider is chosen under Coach Engine.</li>
-    <li><strong>The model list is empty.</strong> Save the key first: the list is loaded from the provider with it.</li>
-    <li><strong>The coach says the provider refused.</strong> Check that the account still has credit and that the key was not deleted on the provider's page; then choose the model again.</li>
-    <li><strong>The AI features are locked.</strong> After the free 30 days they need Feelrun Pro (Settings › General › Feelrun Pro).</li>
-  </ul>
+  <section class="section read" aria-labelledby="wrong">
+    <h2 id="wrong">If something goes wrong</h2>
+    <div class="doc">
+      <ul>
+        <li><strong>Feelrun says the key looks wrong.</strong> Copy it again in full. An OpenAI key starts with <code>sk-</code>, an Anthropic key with <code>sk-ant-</code>; check that the right provider is chosen under Coach Engine.</li>
+        <li><strong>The model list is empty.</strong> Save the key first: the list is loaded from the provider with it.</li>
+        <li><strong>The coach says the provider refused.</strong> Check that the account still has credit and that the key was not deleted on the provider's page; then choose the model again.</li>
+        <li><strong>The AI features are locked.</strong> After the free 30 days they need Feelrun Pro (Settings › General › Feelrun Pro).</li>
+      </ul>
+    </div>
+  </section>
 
-  <h2>Stopping</h2>
-  <p>Tap <strong>Remove Key</strong> in Settings › AI. To end it at the provider too, delete the key on its API keys page. Feelrun then speaks its built-in cues again.</p>
-
-  <p>More help: <a href="support.html">Support</a> · <a href="mailto:feelrunapp@gmail.com">feelrunapp@gmail.com</a></p>
-
-  <footer>Feelrun · <a href="./">Home</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></footer>
+  <section class="section read" aria-labelledby="stop">
+    <h2 id="stop">Stopping</h2>
+    <p>Tap <strong>Remove Key</strong> in Settings › AI. To end it at the provider too, delete the key on its API keys page. Feelrun then speaks its built-in cues again.</p>
+    <p class="muted">More help: <a href="support.html">Support</a>, or write to feelrunapp@gmail.com.</p>
+  </section>
 </main>
+
+<footer class="wrap">
+  <div class="site-footer">
+    <span>Feelrun for Apple Watch and iPhone</span>
+    <a href="./">Home</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
 </body>
 </html>

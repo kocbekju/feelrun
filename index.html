@@ -2,52 +2,128 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Feelrun – trail running coach for Apple Watch and iPhone</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Feelrun · Trail running coach for Apple Watch and iPhone</title>
 <meta name="description" content="Feelrun is a running coach for Apple Watch and iPhone, made for trails and hills.">
+<meta name="theme-color" content="#061316">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 </head>
 <body>
-<main>
-  <header>
-    <img src="icon.png" alt="">
-    <a href="./">Feelrun</a>
-    <nav><a href="./" aria-current="page">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
-  </header>
+<header class="site-header wrap">
+  <a class="brand" href="./"><img src="icon.png" alt="" width="44" height="44">Feelrun</a>
+  <nav aria-label="Site"><a href="./" aria-current="page">Home</a><a href="ai-key.html">AI key</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+</header>
 
-  <h1>Feel every climb.</h1>
-  <p class="lead">Feelrun is a running coach for Apple Watch and iPhone, made for trails and hills.</p>
-  <p>Integrates with Apple Health: it reads your workout history and saves the runs you record.</p>
-  <img class="hero" src="header.png" alt="Feelrun on iPhone and Apple Watch">
+<main class="wrap">
+  <img class="key-art" src="img/key-art.jpg" width="1600" height="686" alt="Feelrun on iPhone and Apple Watch. Feel every climb. AI coach for trail runners, Apple Watch and iPhone.">
 
-  <h2>Everything free for 30 days</h2>
-  <p>Nothing is charged, not then and not after, and there is no subscription. After 30 days Feelrun becomes read-only: your runs until then, your history and statistics stay to read, and nothing new is recorded, changed or planned. To keep recording, Feelrun Pro is one purchase, once, only if you want it.</p>
+  <section class="intro">
+    <div>
+      <p class="eyebrow">Apple Watch · iPhone</p>
+      <h1>A running coach made for trails and hills.</h1>
+      <p class="lead">Feelrun records your runs, hikes and walks, coaches you through the climb ahead, and plans your weeks to your goal race.</p>
+      <p class="muted">Integrates with Apple Health: it reads your workout history and saves the runs you record.</p>
+      <div class="stack tight">
+        <p class="measures" aria-label="A sample trail run: 10.2 kilometres, 486 metres of climb, 1 hour 3 minutes, 156 beats per minute on average, 6 minutes 11 seconds per kilometre">
+          <span class="m-distance">10.2<small>km</small></span>
+          <span class="m-climb">+486<small>m</small></span>
+          <span class="m-time">1:03<small>h</small></span>
+          <span class="m-heart">156<small>bpm</small></span>
+          <span class="m-pace">6:11<small>/km</small></span>
+        </p>
+        <p class="caption">A sample trail run, in the colours Feelrun gives each measure.</p>
+      </div>
+    </div>
+    <aside class="promise" aria-labelledby="free">
+      <h2 id="free">Everything free for 30 days</h2>
+      <ul class="checks">
+        <li>Nothing is charged, not then and not after.</li>
+        <li>No subscription: nothing renews and nothing needs cancelling.</li>
+        <li>After 30 days Feelrun becomes read-only: your runs until then, your history and statistics stay to read, and nothing new is recorded, changed or planned.</li>
+        <li>To keep recording, Feelrun Pro is one purchase, once, only if you want it.</li>
+      </ul>
+    </aside>
+  </section>
 
-  <h2>Record</h2>
-  <ul>
-    <li>Record runs, hikes and walks on Apple Watch or iPhone, saved to Apple Health</li>
-    <li>Time, distance, pace, heart rate, zone and climb at a glance on the watch</li>
-    <li>Spoken cues with your pace, and alerts at the heart-rate, distance and time limits you set</li>
-    <li>Off-route alert, and a sunset warning that reckons the way back from where you are</li>
-  </ul>
+  <section class="section" aria-labelledby="iphone">
+    <header>
+      <p class="eyebrow">On iPhone</p>
+      <h2 id="iphone">Every run in detail, and a coach who knows them</h2>
+    </header>
+    <div class="screens">
+      <figure><img src="img/phone-home.jpg" width="540" height="1174" loading="lazy" alt="Home: this week's plan with today's easy run, the week's distance and climb, and the latest workout"><figcaption>Home: this week's plan, your totals and the latest run</figcaption></figure>
+      <figure><img src="img/phone-plan.jpg" width="540" height="1174" loading="lazy" alt="The training plan, day by day, with the weather forecast beside each session"><figcaption>The plan, week by week, with each day's weather</figcaption></figure>
+      <figure><img src="img/phone-coach.jpg" width="540" height="1174" loading="lazy" alt="The AI coach answering a question about yesterday's trail run"><figcaption>The AI coach on yesterday's run</figcaption></figure>
+      <figure><img src="img/phone-run.jpg" width="540" height="1174" loading="lazy" alt="A trail run's page: the route map, distance, time, climb, heart rate and pace"><figcaption>A run: map, measures, how it felt</figcaption></figure>
+      <figure><img src="img/phone-replay.jpg" width="540" height="1174" loading="lazy" alt="A run replayed on a satellite map, coloured by pace, with its elevation profile"><figcaption>A run replayed on the map</figcaption></figure>
+    </div>
+  </section>
 
-  <h2>Understand (always yours to read)</h2>
-  <ul>
-    <li>Every run in detail: map, splits, heart-rate zones, charts, weather and how it felt</li>
-    <li>Route and climb comparisons with your earlier runs</li>
-    <li>Replay any run on the map, and save it as a video</li>
-  </ul>
+  <section class="section" aria-labelledby="does">
+    <header>
+      <p class="eyebrow">What it does</p>
+      <h2 id="does">Record, understand, coach</h2>
+    </header>
+    <div class="features">
+      <div class="feature mark-distance">
+        <h3 class="eyebrow">Record</h3>
+        <ul>
+          <li>Record runs, hikes and walks on Apple Watch or iPhone, saved to Apple Health</li>
+          <li>Time, distance, pace, heart rate, zone and climb at a glance on the watch</li>
+          <li>Spoken cues with your pace, and alerts at the heart-rate, distance and time limits you set</li>
+          <li>Off-route alert, and a sunset warning that reckons the way back from where you are</li>
+        </ul>
+      </div>
+      <div class="feature mark-pace">
+        <h3 class="eyebrow">Understand, always yours to read</h3>
+        <ul>
+          <li>Every run in detail: map, splits, heart-rate zones, charts, weather and how it felt</li>
+          <li>Route and climb comparisons with your earlier runs</li>
+          <li>Replay any run on the map, and save it as a video</li>
+        </ul>
+      </div>
+      <div class="feature mark-climb">
+        <h3 class="eyebrow">Coach and plan</h3>
+        <ul>
+          <li>AI coach: cues written for you during the run, an analysis of every run, and a chat about your training</li>
+          <li>A training plan to your goal race, week by week, around your week and the weather forecast</li>
+          <li>Live sharing: someone at home follows your run on a map, live</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h2>Coach and plan</h2>
-  <ul>
-    <li>AI coach: cues written for you during the run, an analysis of every run, and a chat about your training</li>
-    <li>A training plan to your goal race, week by week, around your week and the weather forecast</li>
-    <li>Live sharing: someone at home follows your run on a map, live</li>
-  </ul>
-  <p>The AI coach uses your own OpenAI or Anthropic API key. No account, no Feelrun server, no tracking.</p>
+  <section class="section" aria-labelledby="watch">
+    <header>
+      <p class="eyebrow">On Apple Watch</p>
+      <h2 id="watch">What matters, at a glance on the climb</h2>
+    </header>
+    <div class="screens watch">
+      <figure><img src="img/watch-run.jpg" width="416" height="496" loading="lazy" alt="A run on the watch: 41:31, 7.48 km, 5:33 per km, 148 bpm in zone 3, +286 m, and the next 35 m of climb over 120 m"><figcaption>A run: time, distance, pace, heart rate, zone and climb</figcaption></figure>
+      <figure><img src="img/watch-coach.jpg" width="416" height="496" loading="lazy" alt="A coach cue on the watch: Steep for 200 m more, then the climb eases. Keep it steady."><figcaption>A cue from the coach about the climb ahead</figcaption></figure>
+      <figure><img src="img/watch-plan.jpg" width="416" height="496" loading="lazy" alt="Today's planned run on the watch: Tempo after work, 5.2 km, 38 minutes, with a start button"><figcaption>Today's planned run, one tap to start</figcaption></figure>
+      <figure><img src="img/watch-summary.jpg" width="416" height="496" loading="lazy" alt="The summary on the watch: 12.40 km, 1:23:45, 6:45 per km, 148 bpm, +412 m, and the route's shape"><figcaption>The summary at the finish</figcaption></figure>
+    </div>
+  </section>
 
-  <footer>Feelrun · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></footer>
+  <section class="section" aria-labelledby="private">
+    <div class="card read">
+      <h2 id="private">Private by design</h2>
+      <p>No account, no Feelrun server, no tracking. Your runs stay on your iPhone and in Apple Health.</p>
+      <p>The AI coach uses your own OpenAI or Anthropic key, and asks before any workout data is sent. <a href="ai-key.html">How to set up your key</a>.</p>
+    </div>
+  </section>
 </main>
+
+<footer class="wrap">
+  <div class="site-footer">
+    <span>Feelrun for Apple Watch and iPhone</span>
+    <a href="ai-key.html">Your own AI key</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
 </body>
 </html>

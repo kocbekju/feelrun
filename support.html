@@ -2,65 +2,80 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Feelrun Support</title>
 <meta name="description" content="Help with Feelrun for Apple Watch and iPhone.">
+<meta name="theme-color" content="#061316">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 </head>
 <body>
-<main>
-  <header>
-    <img src="icon.png" alt="">
-    <a href="./">Feelrun</a>
-    <nav><a href="./">Home</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a></nav>
-  </header>
+<header class="site-header wrap">
+  <a class="brand" href="./"><img src="icon.png" alt="" width="44" height="44">Feelrun</a>
+  <nav aria-label="Site"><a href="./">Home</a><a href="ai-key.html">AI key</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a></nav>
+</header>
 
-  <h1>Support</h1>
-  <div class="card">
-    <p>Write to <a href="mailto:feelrunapp@gmail.com">feelrunapp@gmail.com</a>. Say which iPhone and Apple Watch you use, their iOS and watchOS versions, and what happened. You get an answer within a few days.</p>
+<main class="wrap">
+  <div class="read">
+    <div class="doc-head">
+      <h1>Support</h1>
+      <div class="card">
+        <p class="muted">Write to</p>
+        <p class="contact"><strong>feelrunapp@gmail.com</strong> <a href="mailto:feelrunapp@gmail.com">Open in Mail</a></p>
+        <p>Say which iPhone and Apple Watch you use, their iOS and watchOS versions, and what happened. You get an answer within a few days.</p>
+      </div>
+      <ul class="toc" aria-label="On this page">
+        <li><a href="#start">Getting started</a></li>
+        <li><a href="#pro">Feelrun Pro</a></li>
+        <li><a href="#coach">AI coach</a></li>
+      </ul>
+    </div>
+
+    <div class="doc">
+      <h2 id="start">Getting started</h2>
+      <h3>What do I need?</h3>
+      <p>An iPhone with iOS 18 or later. For the watch app, an Apple Watch with watchOS 26 or later; runs can also be recorded on the iPhone alone.</p>
+      <h3>Feelrun does not see my workouts</h3>
+      <p>Open Settings › Health › Review Access in Feelrun and allow workouts, heart rate and routes. Then tap Re-import History.</p>
+      <h3>My runs appear twice in Apple Health</h3>
+      <p>If another app (for example Strava) also writes your runs to Apple Health, each run is there twice. Feelrun explains how to turn that off in Settings › Health.</p>
+
+      <h2 id="pro">Feelrun Pro</h2>
+      <h3>What does Pro include, and what does it cost?</h3>
+      <p>After the free 30 days: recording new runs, hikes and walks, changes to your runs, the AI coach, the training plan and live sharing. It is one purchase, not a subscription. The price is shown in the app.</p>
+      <h3>How do the free 30 days work?</h3>
+      <p>Start them at the first launch or in Settings › General › Feelrun Pro. For 30 days everything is open. Nothing is charged, not then and not after, and there is no subscription to cancel.</p>
+      <h3>What happens after the 30 days?</h3>
+      <p>Feelrun becomes read-only: your runs until then, your history, statistics, comparisons and replays stay to read, and your runs are in Apple Health. Nothing new is recorded, changed or planned: recording, changes to your runs, the AI coach, the plan and live sharing need Feelrun Pro, one purchase, once. Workouts Apple Health gets after the 30 days show in Feelrun once Pro is bought.</p>
+      <h3>I bought Pro on another device, or reinstalled the app</h3>
+      <p>Open Settings › General › Feelrun Pro and tap Restore Purchases. Use the same Apple Account you bought it with.</p>
+      <h3>Refunds</h3>
+      <p>Purchases are handled by Apple. Ask for a refund at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+      <h2 id="coach">AI coach</h2>
+      <h3>Why does the AI coach need my own API key?</h3>
+      <p>Feelrun has no server. The coach sends your request straight from your iPhone to OpenAI or Anthropic, under your own account and your own key, entered in Settings › AI. Feelrun asks before any workout data is sent, and you can withdraw that at any time.</p>
+      <h3>How do I get a key and turn the coach on?</h3>
+      <p>The key comes from OpenAI or Anthropic, not from a ChatGPT or Claude subscription, which does not include it. You pay the provider for what Feelrun asks; you can set a spending limit there. Settings › AI shows the steps, with links.</p>
+      <a class="card link-card" href="ai-key.html">
+        <span class="stack tight"><strong>Your own AI key</strong><span class="muted">Six steps, with pictures of each screen</span></span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <p>To stop, tap Remove Key in Settings › AI, or delete the key on the provider's page.</p>
+      <h3>Is the coach medical advice?</h3>
+      <p>No. Feelrun is for training support only. Heart-rate limits and zones are training aids: with a heart condition, ask your doctor which heart rate is right for you. If you feel pain, dizziness, chest pain or faintness, stop and seek help.</p>
+    </div>
   </div>
-
-  <h2>Getting started</h2>
-  <h3>What do I need?</h3>
-  <p>An iPhone with iOS 18 or later. For the watch app, an Apple Watch with watchOS 26 or later; runs can also be recorded on the iPhone alone.</p>
-  <h3>Feelrun does not see my workouts</h3>
-  <p>Open Settings › Health › Review Access in Feelrun and allow workouts, heart rate and routes. Then tap Re-import History.</p>
-  <h3>My runs appear twice in Apple Health</h3>
-  <p>If another app (for example Strava) also writes your runs to Apple Health, each run is there twice. Feelrun explains how to turn that off in Settings › Health.</p>
-
-  <h2>Feelrun Pro</h2>
-  <h3>What does Pro include, and what does it cost?</h3>
-  <p>After the free 30 days: recording new runs, hikes and walks, changes to your runs, the AI coach, the training plan and live sharing. It is one purchase, not a subscription. The price is shown in the app.</p>
-  <h3>How do the free 30 days work?</h3>
-  <p>Start them at the first launch or in Settings › General › Feelrun Pro. For 30 days everything is open. Nothing is charged, not then and not after, and there is no subscription to cancel.</p>
-  <h3>What happens after the 30 days?</h3>
-  <p>Feelrun becomes read-only: your runs until then, your history, statistics, comparisons and replays stay to read, and your runs are in Apple Health. Nothing new is recorded, changed or planned: recording, changes to your runs, the AI coach, the plan and live sharing need Feelrun Pro, one purchase, once. Workouts Apple Health gets after the 30 days show in Feelrun once Pro is bought.</p>
-  <h3>I bought Pro on another device, or reinstalled the app</h3>
-  <p>Open Settings › General › Feelrun Pro and tap Restore Purchases. Use the same Apple Account you bought it with.</p>
-  <h3>Refunds</h3>
-  <p>Purchases are handled by Apple. Ask for a refund at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
-
-  <h2>AI coach</h2>
-  <h3>Why does the AI coach need my own API key?</h3>
-  <p>Feelrun has no server. The coach sends your request straight from your iPhone to OpenAI or Anthropic, under your own account and your own key, entered in Settings › AI. Feelrun asks before any workout data is sent, and you can withdraw that at any time.</p>
-  <h3>How do I get a key and turn the coach on?</h3>
-  <p>The key comes from OpenAI or Anthropic, not from a ChatGPT or Claude subscription, which does not include it. You pay the provider for what Feelrun asks; you can set a spending limit there.</p>
-  <ol>
-    <li>In Feelrun, open Settings › AI and choose OpenAI or Anthropic under Coach Engine. The steps below are shown there too, with links.</li>
-    <li>Open the <a href="https://platform.openai.com/api-keys">OpenAI Platform</a> or the <a href="https://platform.claude.com/settings/keys">Claude Console</a> and sign in, or make an account.</li>
-    <li>In Billing, add some credit. A small amount such as 5 USD is enough to start.</li>
-    <li>In API keys, create a key, name it Feelrun and copy it. It is shown only once: an OpenAI key starts with sk-, an Anthropic key with sk-ant-.</li>
-    <li>Back in Feelrun, tap Paste next to the key field. Feelrun checks the key and saves it in your iPhone's Keychain.</li>
-    <li>Choose a model. A smaller, newer one answers quickly and costs less.</li>
-    <li>Turn on Share My Training Data, or Feelrun asks the first time an AI feature needs it.</li>
-  </ol>
-  <p>To stop, tap Remove Key in Settings › AI, or delete the key on the provider's page.</p>
-  <p>The same steps with pictures: <a href="ai-key.html">Your own AI key</a>.</p>
-  <h3>Is the coach medical advice?</h3>
-  <p>No. Feelrun is for training support only. Heart-rate limits and zones are training aids: with a heart condition, ask your doctor which heart rate is right for you. If you feel pain, dizziness, chest pain or faintness, stop and seek help.</p>
-
-  <footer>Feelrun · <a href="./">Home</a> · <a href="privacy.html">Privacy Policy</a></footer>
 </main>
+
+<footer class="wrap">
+  <div class="site-footer">
+    <span>Feelrun for Apple Watch and iPhone</span>
+    <a href="./">Home</a>
+    <a href="ai-key.html">Your own AI key</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
 </body>
 </html>
