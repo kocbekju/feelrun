@@ -36,3 +36,12 @@ footer { margin-top: 48px; color: var(--muted); font-size: 14px; border-top: 1px
   h1 { font-size: 32px; }
   nav { gap: 12px; }
 }
+.shot { display: block; width: 100%; max-width: 340px; border-radius: 18px; border: 1px solid var(--line); margin: 14px 0 6px; }
+.shot.wide { max-width: 480px; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.cols .card { margin: 0; }
+.cols h3 { margin-top: 0; }
+.step { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; background: var(--teal); color: #000; font-weight: 800; font-size: 16px; margin-right: 10px; vertical-align: 2px; }
+@media (max-width: 620px) {
+  .cols { grid-template-columns: 1fr; }
+}
