@@ -20,7 +20,7 @@
   <div class="read">
     <div class="doc-head">
       <h1>Privacy Policy</h1>
-      <p class="muted">Last updated: 27 October 2026</p>
+      <p class="muted">Last updated: 12 November 2026</p>
     </div>
     <div class="doc">
     <p>Feelrun is a running and trail-running app for iPhone and Apple Watch. It has no user accounts and no server of its own.</p>
@@ -31,19 +31,20 @@
       <li>Workout history, analyses, coach chat, plans and your goal, stored in the app on your iPhone. Feelrun does not sync these through iCloud.</li>
       <li>Your AI provider API key, stored in the iOS Keychain.</li>
     </ul>
-    <p>Feelrun's developer does not receive, collect, sell or share any of this data. The app contains no analytics, advertising or tracking SDKs. The one thing the developer can see is a vote you choose to give (below).</p>
+    <p>Feelrun's developer does not receive, collect, sell or share any of this data. The app contains no analytics, advertising or tracking SDKs. The only things the developer can see are the votes and ideas you choose to send (below).</p>
 
     <h2>Purchases</h2>
     <p>Feelrun Pro and the free 30 days are taken through the App Store. Apple handles the payment; the app only asks the App Store whether Pro was bought or the 30 days started, and when. The developer receives no payment or personal details from it.</p>
 
     <h2>Optional AI features</h2>
-    <p>If you choose OpenAI or Anthropic as the Coach Engine in Settings › AI, enter your own API key for it and allow data sharing when asked, Feelrun sends the request directly from your iPhone to that provider under your account. Each request is built from: workout titles, dates and summaries (type, distance, duration, climb); heart rate, pace, elevation and terrain derived from your routes (kilometre splits and profile points, not coordinates); heart-rate zones and your heart-rate threshold; training load; your goal and plan; weather at your workouts and the forecast for the coming days; and your chat messages and notes. Raw GPS coordinates are not sent. The provider's own privacy policy governs that data. You can withdraw permission at any time in Settings › AI (Share My Training Data); without it, no data is sent and Feelrun's built-in cues are used instead.</p>
+    <p>If you choose OpenAI or Anthropic as the Coach Engine in Settings › AI, enter your own API key for it and allow data sharing when asked, Feelrun sends the request directly from your iPhone to that provider under your account. Each request is built from: workout titles, dates and summaries (type, distance, duration, climb); heart rate, pace, elevation and terrain derived from your routes (kilometre splits and profile points, not coordinates); heart-rate zones and your heart-rate threshold; training load; your goal and plan; weather at your workouts and the forecast for the coming days; and your chat messages and notes, with any picture you add to a chat message. Raw GPS coordinates are not sent. The provider's own privacy policy governs that data. You can withdraw permission at any time in Settings › AI (Share My Training Data); without it, no data is sent and Feelrun's built-in cues are used instead.</p>
 
-    <h2>A vote on an AI subscription (optional)</h2>
-    <p>In Settings › AI you can answer whether you would subscribe monthly to an AI coach that needs no key of your own. If you vote, your answer (yes or no) and the app's version are saved in Feelrun's public iCloud database, under the anonymous identifier iCloud gives your Apple Account for this app, so that each account has one vote. No name, email address, workout or health data goes with it. Only the developer sees the votes, as a count; the app shows you only your own. You can change or withdraw your vote there at any time; withdrawing deletes it.</p>
+    <h2>Votes and ideas (optional)</h2>
+    <p>In Settings › AI (and among the ideas below) you can answer whether you would subscribe monthly to an AI coach that needs no key of your own. If you vote, your answer (yes or no) and the app's version are saved in Feelrun's public iCloud database, under the anonymous identifier iCloud gives your Apple Account for this app, so that each account has one vote. No name, email address, workout or health data goes with it. Only the developer sees the votes, as a count; the app shows you only your own. You can change or withdraw your vote there at any time; withdrawing deletes it.</p>
+    <p>Under Settings › General › Help Shape Feelrun you can vote for up to three ideas for what Feelrun could do next, and send an idea of your own. Each vote is saved the same way, as the idea's name and the app's version under that anonymous identifier, one per idea and account; taking a vote back deletes it. An idea of your own is saved with the app's version, and iCloud notes the same anonymous identifier as the one who wrote it. Write nothing in it that you would not want the developer to read: no name, email address, workout or health data goes with it unless you write it there. Only the developer reads the votes and ideas; nobody else using Feelrun sees them.</p>
 
     <h2>FollowMe (live sharing, optional)</h2>
-    <p>If you start FollowMe, Feelrun writes your live location track, elapsed time, workout state and, on a known route, remaining distance to a temporary area in <strong>your own private iCloud database</strong> and creates a read-only link or QR code. Anyone you give the link to can follow your run in Feelrun while the workout lasts. Your heart rate and other Apple Health data are not part of it. Distance and pace shown to followers are calculated from the location track. The shared data is deleted when the workout ends (and leftovers are removed the next time you open the app); you can stop sharing at any time. Feelrun's developer cannot see it. Scanning a FollowMe code uses the camera; images are processed on the device and not stored.</p>
+    <p>If you start FollowMe, Feelrun writes your live location track, elapsed time, workout state and, on a known route, remaining distance to a temporary area in <strong>your own private iCloud database</strong> and creates a read-only link or QR code. Anyone you give the link to can follow your run in Feelrun while the workout lasts. Your heart rate and other Apple Health data are not part of it. Distance and pace shown to followers are calculated from the location track. The shared data is deleted when the workout ends (and leftovers are removed the next time you open the app); you can stop sharing at any time. If you choose the same link for every run, the link stays until you stop sharing: two minutes after each run its location track is deleted and only that run's distance, time and end time stay readable to whoever has the link, until your next run takes their place. Feelrun's developer cannot see it. Scanning a FollowMe code uses the camera; images are processed on the device and not stored. Someone following your run can send you a short message, which the coach reads to you: it is stored, encrypted with a key that only the run's link carries, in Feelrun's public iCloud database together with the name they give, cannot be read without the link, and is deleted by their app after an hour.</p>
 
     <h2>Location</h2>
     <p>Location is used during workouts to record your route, show terrain ahead, warn when you leave a known route, and estimate sunset for daylight warnings. To name a run after the place it went to, Feelrun asks Apple's geocoder about the start and up to two more points of the run, each rounded to about 100 m. Location is not shared except as described here and above.</p>
@@ -53,9 +54,11 @@
 
     <h2>Weather</h2>
     <p>To show conditions for a workout, Feelrun asks Apple WeatherKit for weather at the workout's location and time. For the training plan and the coach it also asks for the daily forecast near where you last ran. The location is used only to ask WeatherKit.</p>
+    <p>In the coach chat, the AI provider you chose (OpenAI or Anthropic) may search the web to answer a question about races, trails, gear or research. The search is made by the provider as part of your request to it; Feelrun sends nothing more for it.</p>
+    <p>To tell you when a newer version of Feelrun is out, the app asks Apple's App Store, at most every 12 hours, which version it has. The asking carries only the app's identifier and your iPhone's region; nothing of you or your workouts.</p>
 
     <h2>Photos</h2>
-    <p>When you choose Save to Photos after creating a route replay video, Feelrun asks for add-only access and writes that video to your photo library. Feelrun does not read your photo library.</p>
+    <p>When you choose Save to Photos after creating a route replay video, Feelrun asks for add-only access and writes that video to your photo library. When you add a picture to a coach chat message, you pick it in the system's photo picker or paste it; Feelrun gets only that picture, keeps a scaled-down copy with the chat on your iPhone (deleted with the chat) and sends it with that message to your AI provider. Feelrun does not read your photo library.</p>
 
     <h2>Children</h2>
     <p>Feelrun is not directed at children under 13.</p>
