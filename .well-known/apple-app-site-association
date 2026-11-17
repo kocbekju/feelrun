@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["JSA9MK5GA8.com.jurekocbek.trailpulse"],
+        "components": [
+          {
+            "/": "/g/*",
+            "comment": "Feelrun shoe tags: a pair's link, opened in Feelrun"
+          }
+        ]
+      }
+    ]
+  }
+}
